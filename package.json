@@ -1,0 +1,15 @@
+{
+  "name": "task-8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mqtt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MD KAVIUL HOSSAIN",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mqtt": "^4.0.1"
+  }
+}
