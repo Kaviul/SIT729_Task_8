@@ -4,7 +4,7 @@ const client = mqtt.connect('mqtt://broker.hivemq.com:1883', {
     username : process.env.USERNAME,
     password : process.env.PASSWORD  
 });
-
+//const client = mqtt.connect('127.0.0.1:1883');
 const topic = "/sensor";
 
 client.on("connect", function () {
@@ -14,5 +14,7 @@ client.on("connect", function () {
 });
 
 client.on('message', (topic, message) => {
-    console.log(message.toString());
+    console.log('Topic is: ' + topic);
+    console.log('Message is: ' + message.toString());
+    
   });
